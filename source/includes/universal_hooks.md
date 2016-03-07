@@ -250,7 +250,7 @@ def OnServerInitialized():
 ## OnServerSave
 
 ``` csharp
-void OnServerSave
+void OnServerSave()
 {
     Puts("OnServerSave works!");
 }
@@ -280,6 +280,40 @@ def OnServerSave():
 
  * No return behavior
  * Called before the server saves and shuts down
+ * 
+## OnServerShutdown
+
+``` csharp
+void OnServerShutdown()
+{
+    Puts("OnServerShutdown works!");
+}
+```
+
+``` lua
+function PLUGIN:OnServerShutdown()
+    print("OnServerShutdown works!")
+end
+```
+
+``` coffeescript
+OnServerShutdown: ->
+  print "OnServerShutdown works!"
+```
+
+``` javascript
+OnServerShutdown: function() {
+  print("OnServerShutdown works!");
+}
+```
+
+``` python
+def OnServerShutdown():
+  print "OnServerShutdown works!"
+```
+
+ * No return behavior
+ * Called when the server shuts down
 
 ## OnUserPermissionGranted
 
