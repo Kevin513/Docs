@@ -138,3 +138,30 @@ We need a Python example here
 
  * Called when a player sends chat to the server
  * Returning a non-null value overrides default behavior of chat, not commands
+ * 
+## OnPlayerCommand
+
+``` csharp
+void OnPlayerCommand(Player player, string command, string[] args)
+{
+    Puts("OnPlayerCommand works!");
+}
+```
+
+``` lua
+We need a Lua example here
+```
+
+``` javascript
+We need a JavaScript example here
+```
+
+``` coffeescript
+We need a CoffeeScript example here
+```
+
+``` python
+We need a Python example here
+```
+
+ * Called when a player sends a command to the server
